@@ -22,5 +22,6 @@ namespace TextLib.Data
             get { return _frequency; }
             set { _frequency = value; }
         }
+
     }
 }

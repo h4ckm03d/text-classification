@@ -8,14 +8,14 @@ namespace TextLib.Reader
 {
     public class TextReader:IReader
     {
-        public string Read<string>(string path)
+        public string Read(string path)
         {
             if (!File.Exists(path))
                 return null;
 
             try
             {
-                return File.ReadAllText(path, ASCIIEncoding.UTF32);
+                return File.ReadAllText(path);
             }
             catch (Exception e)
             {
@@ -25,9 +25,9 @@ namespace TextLib.Reader
             return null;
         }
 
-        public T GetInfo<T>(string path)
+        public object GetInfo(string path)
         {
-            throw new NotImplementedException();
+            return null;
         }
     }
 }

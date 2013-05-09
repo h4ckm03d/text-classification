@@ -7,7 +7,7 @@ namespace TextLib.Reader
 {
     interface IReader
     {
-        public T Read<T>(string path);
-        public T GetInfo<T>(string path);
+        string Read(string path);
+        object GetInfo(string path);
     }
 }
